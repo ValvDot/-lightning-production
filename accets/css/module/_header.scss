@@ -1,20 +1,20 @@
 /*
  * Файл со стилями шапки сайта
  */
-ul.mean__right-ul {
+ul.mean__center-ul {
   display: flex;
   justify-content: center;
 }
 
-.mean__right-ul a {
+.mean__center-ul a {
   text-decoration: none;
   font-weight: 600;
   font-size: 12px;
   color: #000;
 }
-.mean__right-ul a:hover {
+.mean__center-ul a:hover {
   color:#CAC338;
 }
-.mean__right-ul li {
+.mean__center-ul li {
   margin: 0 0 0 16px;
 }
