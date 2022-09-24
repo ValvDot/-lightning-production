@@ -147,4 +147,11 @@ nav.mean__right-nav {
   margin: 5px 0 0 0;
 }
 
+.mean__nav-right-a {
+  display: block;
+  height: 20px;
+  position: relative;
+  top: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
