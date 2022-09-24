@@ -56,6 +56,22 @@ table {
 /*
  * Файл со стилями шапки сайта
  */
+.mean {
+  display: grid;
+  grid-template-columns: 249px 1fr 1fr;
+  align-items: center;
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.mean__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .mean__center-ul {
   display: flex;
   justify-content: center;
