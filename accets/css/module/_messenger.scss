@@ -3,15 +3,23 @@
  */
 .messenger {
   position: fixed;
-  top: 74%;
+  top: 45%;
   right: 15%;
 }
 .messenger__whatsapp{
   margin-bottom: 3px;
 }
+.messenger__text {
+  display: none;
+}
 @media (max-width: 1560px) {
   .messenger {
     right: 8%;
+  }
+}
+@media (max-width: 1366px) {
+  .messenger__text {
+    display: block;
   }
 }
 @media (max-width: 360px) {
