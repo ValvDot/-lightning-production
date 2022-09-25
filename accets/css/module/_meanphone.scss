@@ -1,0 +1,17 @@
+/*
+ * Файлы со стилями meanphone
+ */
+.meanphone__nav {
+  position: fixed;
+}
+
+.meanphone {
+  display: flex;
+  justify-content: center;
+}
+
+.meanphone__nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

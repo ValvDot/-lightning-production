@@ -1,0 +1,24 @@
+/*
+ * Файлы со стилями messenger
+ */
+.messenger {
+  position: fixed;
+  top: 74%;
+  right: 15%;
+}
+.messenger__whatsapp{
+  margin-bottom: 3px;
+}
+@media (max-width: 1560px) {
+  .messenger {
+    right: 8%;
+  }
+}
+@media (max-width: 360px) {
+  .messenger__WhatsApp-a-img {
+    width: 28px;
+  }
+  .messenger__Telegram-a-img {
+    width: 28px;
+  }
+}
