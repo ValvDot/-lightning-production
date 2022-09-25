@@ -1,0 +1,63 @@
+/*
+ * Файлы со стилями meanphone
+ */
+.bot-menu {
+  bottom: 4%;
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
+.bot-menu__ul {
+  display: flex;
+  align-items: center;
+  width: 288px;
+  margin: 0 auto;
+  background: #F7F7F7;
+  border-radius: 20px;
+}
+
+a.bot-menu__a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 8px;
+  color: #000000;
+  font-family: 'Proxima Nova Rg';
+}
+
+.bot-menu__ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 288px;
+  margin: 0 auto;
+  justify-items: center;
+  position: relative;
+  background: #F7F7F7;
+  border-radius: 20px;
+  padding: 8px 10px;
+}
+
+.bot-menu__li-center {
+  position: relative;
+}
+
+.bot-menu__li-center img {
+  right: 0;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 600px) {
+  .bot-menu{
+    display: block;
+  }
+}
+
