@@ -296,6 +296,7 @@ nav.mean__right-nav {
 @media (max-width: 1366px) {
   .messenger__text {
     display: block;
+    margin-top: 250px;
   }
 }
 @media (max-width: 360px) {
@@ -332,6 +333,7 @@ a.bot-menu__a {
   line-height: 8px;
   color: #000000;
   font-family: "Proxima Nova Rg";
+  text-decoration: none;
 }
 
 .bot-menu__ul {
