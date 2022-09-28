@@ -5,6 +5,10 @@
   background: #FFFFFF;
   box-shadow: 0 4px 80px rgb(0 0 0 / 15%);
   padding: 15px 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s all;
 }
 
 .mean__container {
@@ -115,8 +119,11 @@ nav.mean__right-nav {
   }
 }
 
-.mean__contakt-a {
+.mean__contakt-a,
+.mean__contakt-a:active,
+.mean__contakt-a:focus {
   text-decoration: none;
+  color: #A7A8A0;
 }
 
 .mean__left-logo-img-mobile {
@@ -136,6 +143,25 @@ nav.mean__right-nav {
 .test > div {
   background: #ccc;
   min-height: 200px;
+}
+
+.head-fixed {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s all;
+  background: transparent;
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  padding: 30px 0 30px 0;
+}
+
+.head-fixed .mean__center-ul-a,
+.head-fixed .mean__contakt-p-span {
+  color: #fff;
+}
+
+.head-fixed amean__contakt-a {
+  color: #a7a8a0;
 }
 
 @media (max-width: 1728px) {

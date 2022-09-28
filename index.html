@@ -29,7 +29,7 @@
 <body>
 
 <!--Шапка -->
-<header class="mean">
+<header class="mean head-fixed">
 
     <div class="mean__container">
         <!--Левая часть шапка с logo-->
@@ -109,10 +109,8 @@
             </nav>
             <div class="mean__contakt">
                 <p class="mean__contakt-p">
-                    <a href="" class="mean__contakt-a">
-
+                    <a href="tel:+74955005056" class="mean__contakt-a">
                         +7(495) <span class="mean__contakt-p-span">500-50-56</span>
-
                     </a>
                 </p>
                 <p class="mean__contakt-p">
@@ -128,6 +126,10 @@
         </div>
     </div>
 </header>
+
+<section class="air-bg">
+
+</section>
 
 <div class="test">
     <div></div>
@@ -167,8 +169,6 @@
     <div></div>
     <div></div>
 </div>
-
-
 <!--Месенджеры-->
 <div class="messenger">
     <div class="messenger__whatsapp">
@@ -211,6 +211,18 @@
     </ul>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $(".mean").removeClass("head-fixed");
+            } else {
+                $(".mean").addClass('head-fixed');
+            }
+        });
+    });
+</script>
 </body>
 </html>

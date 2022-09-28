@@ -68,6 +68,10 @@ a {
   background: #FFFFFF;
   box-shadow: 0 4px 80px rgba(0, 0, 0, 0.15);
   padding: 15px 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s all;
 }
 
 .mean__container {
@@ -177,8 +181,11 @@ nav.mean__right-nav {
   opacity: 0.7;
 }
 
-.mean__contakt-a {
+.mean__contakt-a,
+.mean__contakt-a:active,
+.mean__contakt-a:focus {
   text-decoration: none;
+  color: #A7A8A0;
 }
 
 .mean__left-logo-img-mobile {
@@ -197,6 +204,25 @@ nav.mean__right-nav {
 .test > div {
   background: #ccc;
   min-height: 200px;
+}
+
+.head-fixed {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s all;
+  background: transparent;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  padding: 30px 0 30px 0;
+}
+
+.head-fixed .mean__center-ul-a,
+.head-fixed .mean__contakt-p-span {
+  color: #fff;
+}
+
+.head-fixed amean__contakt-a {
+  color: #a7a8a0;
 }
 
 @media (max-width: 1366px) {
@@ -312,6 +338,21 @@ nav.mean__right-nav {
     display: none;
   }
 }
+.air-bg {
+  height: 100vh;
+  background-image: url(../img/bg-test.jpg);
+  background-size: cover;
+}
+.air-bg:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 11, 21, 0.8);
+  content: "";
+}
+
 /*
  * Файлы со стилями messenger
  */
