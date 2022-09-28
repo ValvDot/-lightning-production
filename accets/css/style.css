@@ -143,6 +143,21 @@ body {
   top: 10px;
 }
 
+/*Потом перенести*/
+.mean__contakt-a {
+  text-decoration: none;
+}
+.mean__contakt-p-span:hover {
+  color: #CAC338;
+  transition: 0.3s
+}
+.mean__contakt-p-a:hover {
+  color: #CAC338;
+  transition: 0.3s
+}
+/*Потом перенести*/
+
+
 nav.mean__right-nav {
   margin: 5px 0 0 0;
 }
