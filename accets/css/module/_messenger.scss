@@ -4,30 +4,29 @@
 .messenger {
   position: fixed;
   top: 45%;
-  right: 15%;
+  right: 5%;
 }
-.messenger__whatsapp{
+
+.messenger__whatsapp {
   margin-bottom: 3px;
 }
+
 .messenger__text {
-  display: none;
+  display: block;
+  margin-top: 250px;
 }
+
 @media (max-width: 1560px) {
   .messenger {
     right: 8%;
   }
 }
-@media (max-width: 1366px) {
-  .messenger__text {
-    display: block;
-    margin-top: 250px;
-  }
-}
+
 @media (max-width: 360px) {
-  .messenger__WhatsApp-a-img {
+  .messenger__whatsapp-a-img {
     width: 28px;
   }
-  .messenger__Telegram-a-img {
+  .messenger__telegram-a-img {
     width: 28px;
   }
 }
