@@ -8,19 +8,10 @@
   display: none;
 }
 
-.bot-menu__ul {
-  display: flex;
-  align-items: center;
-  width: 288px;
-  margin: 0 auto;
-  background: #F7F7F7;
-  border-radius: 20px;
-}
-
 a.bot-menu__a {
   font-style: normal;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 14px;
   line-height: 8px;
   color: #000000;
   font-family: "Proxima Nova Rg";
@@ -31,7 +22,7 @@ a.bot-menu__a {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 288px;
+  width: 450px;
   margin: 0 auto;
   justify-items: center;
   position: relative;
@@ -55,10 +46,30 @@ a.bot-menu__a {
   transform: translate(-50%, -50%);
 }
 
+.bit {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  right: 4.8%;
+  bottom: 4.8%;
 
-@media (max-width: 600px) {
-  .bot-menu{
-    display: block;
+  & img{
+    border-radius:50px
   }
 }
+
+
+@media (max-width: 600px) {
+  .bot-menu {
+    display: block;
+  }
+  .bot-menu__ul {
+    width: 288px;
+  }
+  a.bot-menu__a {
+    font-size: 8px;
+  }
+}
+
 

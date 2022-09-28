@@ -39,6 +39,16 @@
   text-transform: uppercase;
 }
 
+.mean__center-logo-a svg,
+.mean__center-logo-a svg path {
+  transition: 0.3s all;
+}
+
+.mean__center-logo-a:hover svg,
+.mean__center-logo-a:hover svg path {
+  fill: #CAC338;
+}
+
 .mean__center-ul-a:hover, .mean__center-ul-a.active {
   color: #CAC338;
 }
@@ -67,6 +77,11 @@
   color: black;
   font-weight: 700;
   font-size: 23px;
+  transition: 0.3s all;
+}
+
+.mean__contakt-a:hover .mean__contakt-p-span {
+  color: #CAC338;
 }
 
 .mean__contakt-p-a {
@@ -93,13 +108,34 @@ nav.mean__right-nav {
   height: 20px;
   position: relative;
   top: 5px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
+
 .mean__contakt-a {
   text-decoration: none;
 }
 
 .mean__left-logo-img-mobile {
   display: none;
+}
+
+.test {
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+  gap: 40px;
+  display: grid;
+  margin: 100px auto;
+
+  max-width: 1330px;
+  padding: 0 20px;
+}
+
+.test > div {
+  background: #ccc;
+  min-height: 200px;
 }
 
 @media (max-width: 1728px) {
