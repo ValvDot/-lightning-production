@@ -126,96 +126,103 @@
     </div>
 </header>
 
-<section class="air-bg">
+<div class="vld-container">
 
-</section>
+    <section class="air-bg">
 
-<div class="test">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<!--Месенджеры-->
-<div class="messenger">
-    <div class="messenger__whatsapp">
-        <a href="#" class="messenger__whatsapp-a">
-            <img src="assets/images/Whatsapmeseenger.svg" alt="" class="messenger__whatsapp-a-img">
-        </a>
+    </section>
 
+    <div class="test">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <div class="messenger__telegram">
-        <a href="#" class="messenger__telegram-a">
-            <img src="assets/images/Telegrammessenger.svg" alt="" class="messenger__telegram-a-img">
+
+
+    <!--Месенджеры-->
+    <div class="messenger">
+        <div class="messenger__whatsapp">
+            <a href="#" class="messenger__whatsapp-a">
+                <img src="assets/images/Whatsapmeseenger.svg" alt="" class="messenger__whatsapp-a-img">
+            </a>
+
+        </div>
+        <div class="messenger__telegram">
+            <a href="#" class="messenger__telegram-a">
+                <img src="assets/images/Telegrammessenger.svg" alt="" class="messenger__telegram-a-img">
+            </a>
+        </div>
+    </div>
+
+
+    <!--блок для битрикс виджета-->
+
+    <div class="bit">
+        <a href="#" class="messenger__bit-a">
+            <img src="assets/images/bitrix-widget.png" alt="" class="messenger__bit-img">
         </a>
     </div>
-</div>
 
-<!--блок для битрикс виджета-->
+    <!--Мобильное меню-->
+    <div class="bot-menu">
+        <ul class="bot-menu__ul">
+            <li class="bot-menu__li">
+                <a class="bot-menu__a" href="#">Главная</a>
+            </li>
+            <li class="bot-menu__li">
+                <a class="bot-menu__a" href="#">Каталог</a>
+            </li>
+            <li class="bot-menu__li bot-menu__li-center">
+                <img src="assets/images/Telephone.svg" alt="">
+            </li>
+            <li class="bot-menu__li">
+                <a class="bot-menu__a" href="">Заказать</a>
+            </li>
+            <li class="bot-menu__li">
+                <a class="bot-menu__a" href="">Контакты</a>
+            </li>
+        </ul>
+    </div>
 
-<div class="bit">
-    <a href="#" class="messenger__bit-a">
-        <img src="assets/images/bitrix-widget.png" alt="" class="messenger__bit-img">
-    </a>
-</div>
-
-<!--Мобильное меню-->
-<div class="bot-menu">
-    <ul class="bot-menu__ul">
-        <li class="bot-menu__li">
-            <a class="bot-menu__a" href="#">Главная</a>
-        </li>
-        <li class="bot-menu__li">
-            <a class="bot-menu__a" href="#">Каталог</a>
-        </li>
-        <li class="bot-menu__li bot-menu__li-center">
-            <img src="assets/images/Telephone.svg" alt="">
-        </li>
-        <li class="bot-menu__li">
-            <a class="bot-menu__a" href="">Заказать</a>
-        </li>
-        <li class="bot-menu__li">
-            <a class="bot-menu__a" href="">Контакты</a>
-        </li>
-    </ul>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
-    $(function() {
-        $(window).scroll(function() {
+    $(function () {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 100) {

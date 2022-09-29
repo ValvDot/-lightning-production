@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 .air-bg {
   height: 100vh;
   background-image: url(../images/bg-test.jpg);
   background-size: cover;
+  position: relative;
+
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
 
   &:after {
     position: absolute;
@@ -11,5 +20,28 @@
     height: 100%;
     background-color: rgba(0, 11, 21, .8);
     content: "";
+  }
+}
+
+.vld-container {
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: 1366px) {
+    & {
+      max-width: 1202px;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      max-width: 922px;
+    }
+  }
+  @media (max-width: 834px) {
+    & {
+      max-width: 682px;
+    }
   }
 }

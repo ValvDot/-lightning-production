@@ -10,7 +10,7 @@
   top: -100px;
   margin: 100px 0 0 0;
   background: #FFFFFF;
-  transition: margin .9s, padding .9s, background .9s;
+  transition: margin .9s ease-in-out, padding .9s ease-in-out, background .9s ease-in-out;
 }
 
 .head-fixed {
@@ -150,9 +150,6 @@ nav.mean__right-nav {
   gap: 40px;
   display: grid;
   margin: 100px auto;
-
-  max-width: 1330px;
-  padding: 0 20px;
 }
 
 .test > div {
@@ -262,6 +259,7 @@ nav.mean__right-nav {
   }
   .mean__container {
     grid-template-columns: 120px 1fr;
+    align-items: normal;
   }
   nav.mean__right-nav {
     display: none;
@@ -271,12 +269,6 @@ nav.mean__right-nav {
   }
   .mean__contakt-p-span {
     font-size: 18px;
-  }
-  .mean__contakt-p-span {
-    font-size: 18px;
-  }
-  .mean__container {
-    align-items: normal;
   }
   header.mean {
     padding: 9px 0;

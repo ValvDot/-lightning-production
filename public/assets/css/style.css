@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -73,7 +74,7 @@ a {
   top: -100px;
   margin: 100px 0 0 0;
   background: #FFFFFF;
-  transition: margin 0.9s, padding 0.9s, background 0.9s;
+  transition: margin 0.9s ease-in-out, padding 0.9s ease-in-out, background 0.9s ease-in-out;
 }
 
 .head-fixed {
@@ -212,8 +213,6 @@ nav.mean__right-nav {
   gap: 40px;
   display: grid;
   margin: 100px auto;
-  max-width: 1330px;
-  padding: 0 20px;
 }
 
 .test > div {
@@ -233,10 +232,18 @@ nav.mean__right-nav {
 .head-fixed .mean__center-ul-a:hover, .head-fixed .mean__center-ul-a.active {
   color: #CAC338;
 }
+* {
+  box-sizing: border-box;
+}
+
 .air-bg {
   height: 100vh;
   background-image: url(../images/bg-test.jpg);
   background-size: cover;
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
 }
 .air-bg:after {
   position: absolute;
@@ -246,6 +253,13 @@ nav.mean__right-nav {
   height: 100%;
   background-color: rgba(0, 11, 21, 0.8);
   content: "";
+}
+
+.vld-container {
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /*
@@ -331,6 +345,9 @@ a.bot-menu__a {
   .mean__container {
     max-width: 1202px;
   }
+  .vld-container {
+    max-width: 1202px;
+  }
 }
 @media (max-width: 1200px){
   nav.mean__center {
@@ -349,9 +366,15 @@ a.bot-menu__a {
     max-width: 922px;
     grid-template-columns: 249px 1fr;
   }
+  .vld-container {
+    max-width: 922px;
+  }
 }
 @media (max-width: 834px){
   .mean__container {
+    max-width: 682px;
+  }
+  .vld-container {
     max-width: 682px;
   }
 }
@@ -402,6 +425,7 @@ a.bot-menu__a {
   }
   .mean__container {
     grid-template-columns: 120px 1fr;
+    align-items: normal;
   }
   nav.mean__right-nav {
     display: none;
@@ -411,12 +435,6 @@ a.bot-menu__a {
   }
   .mean__contakt-p-span {
     font-size: 18px;
-  }
-  .mean__contakt-p-span {
-    font-size: 18px;
-  }
-  .mean__container {
-    align-items: normal;
   }
   header.mean {
     padding: 9px 0;
