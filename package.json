@@ -10,8 +10,7 @@
     "production": "mix --production"
   },
   "browserslist": [
-    "defaults",
-    "ie 11"
+    "last 3 versions"
   ],
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
