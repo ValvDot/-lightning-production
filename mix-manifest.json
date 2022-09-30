@@ -1,5 +1,4 @@
 {
-    "/public/assets/js/spritemap.js": "/public/assets/js/spritemap.js",
     "/public/assets/js/main.js": "/public/assets/js/main.js",
     "/public/assets/css/style.css": "/public/assets/css/style.css",
     "/public/index.html": "/public/index.html",
@@ -59,6 +58,5 @@
     "/public/assets/font/font/ProximaNovaT-Thin.ttf": "/public/assets/font/font/ProximaNovaT-Thin.ttf",
     "/public/assets/font/font/ProximaNovaT-Thin.woff": "/public/assets/font/font/ProximaNovaT-Thin.woff",
     "/public/assets/font/font/ProximaNovaT-Thin.woff2": "/public/assets/font/font/ProximaNovaT-Thin.woff2",
-    "/public/assets/font/stylesheet.css": "/public/assets/font/stylesheet.css",
-    "/public/assets/images/icons.svg": "/public/assets/images/icons.svg"
+    "/public/assets/font/stylesheet.css": "/public/assets/font/stylesheet.css"
 }
