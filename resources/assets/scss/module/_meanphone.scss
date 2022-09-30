@@ -46,19 +46,6 @@ a.bot-menu__a {
   transform: translate(-50%, -50%);
 }
 
-.bit {
-  display: block;
-  width: 48px;
-  height: 48px;
-  position: fixed;
-  right: 4.8%;
-  bottom: 4.8%;
-
-  & img{
-    border-radius:50px
-  }
-}
-
 
 @media (max-width: 600px) {
   .bot-menu {
