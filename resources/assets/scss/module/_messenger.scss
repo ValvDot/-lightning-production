@@ -5,16 +5,22 @@
   position: fixed;
   top: 45%;
   right: 5%;
+
+  &__link {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__link:hover {
+    opacity: 0.8;
+  }
+
+  &__text {
+    display: block;
+    margin-top: 250px;
+  }
 }
 
-.messenger__whatsapp {
-  margin-bottom: 3px;
-}
-
-.messenger__text {
-  display: block;
-  margin-top: 250px;
-}
 
 @media (max-width: 1560px) {
   .messenger {
