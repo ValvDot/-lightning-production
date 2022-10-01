@@ -10,7 +10,7 @@
   top: -100px;
   margin: 100px 0 0 0;
   background: #FFFFFF;
-  transition: margin .9s ease-in-out, padding .9s ease-in-out, background .9s ease-in-out;
+  transition: margin .4s ease-in-out, padding .4s ease-in-out, background .4s ease-in-out;
 }
 
 .head-fixed {
@@ -31,7 +31,7 @@
   grid-template-columns: 249px 1fr 1fr;
   align-items: center;
   max-width: 1330px;
-  padding: 0 20px;
+  padding: 0 16px;
   margin: 0 auto;
   gap: 17px;
 }
@@ -85,7 +85,9 @@ a.mean__center-logo-a {
   grid-template-columns: 1fr 1fr;
   gap: 7px;
 }
-
+.mean__right-nav-ul-li-a:hover{
+  opacity:0.7;
+}
 .mean__contakt-p {
   font-family: 'Proxima Nova Rg';
   font-style: normal;
