@@ -105,7 +105,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
   max-width: 1330px;
-  padding: 0 16px;
   margin: 0 auto;
   gap: 17px;
 }
@@ -382,6 +381,7 @@ a.bot-menu__a {
 @media (max-width: 1366px){
   .mean__container {
     max-width: 1202px;
+    padding: 0 16px;
   }
   .vld-container {
     max-width: 1202px;
