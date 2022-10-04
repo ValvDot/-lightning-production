@@ -4,11 +4,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--фавикон для сайта для рахных устройства-->
+    <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -16,40 +15,43 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Главная страница</title>
-
-    <!--description-->
-    <meta name="description" content="Описание страницы" />
-
     <!--fonts-->
     <link rel="stylesheet" href="assets/font/stylesheet.css">
 
     <!--styles-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <title>Главная страница</title>
+    <meta name="description" content="Описание страницы" />
+
 </head>
+
 <body>
 
-<!--Шапка -->
+<!--Header-->
 <header class="mean head-fixed">
 
     <div class="mean__container">
-        <!--Левая часть шапка с logo-->
+
+        <!--logo-->
         <div class="mean__left">
             <div class="mean__left-logo">
-                <!--Логотип для больших мониторов-->
+
+                <!--logo desktop-->
                 <a href="#" class="mean__left-logo-a">
                     <img src="assets/images/logo/logo.png" alt="" class="mean__left-logo-img">
                 </a>
-                <!--Логотип для мобильных устройств-->
+
+                <!--logo mobile-->
                 <a href="#" class="mean__left-logo-a">
                     <img src="assets/images/logo/logomin.png" alt="" class="mean__left-logo-img-mobile">
                 </a>
+
             </div>
         </div>
-        <!--Центральная часть меню-->
-        <nav class="mean__center">
 
+        <!--menu-->
+        <nav class="mean__center">
             <ul class="mean__center-ul">
 
                 <li class="mean__center-ul-li">
@@ -83,29 +85,33 @@
                 <li class="mean__center-ul-li">
                     <a href="#" title="" class="mean__center-ul-a">Контакты</a>
                 </li>
-            </ul>
 
+            </ul>
         </nav>
 
-        <!--Правая часть меню-->
+        <!--telegramm, whatsap, telephone-->
         <div class="mean__right">
+
             <nav class="mean__right-nav">
                 <ul class="mean__right-nav-ul">
 
+                    <!--telegramm-->
                     <li class="mean__right-nav-ul-li">
-                        <a href="#" title="telegram" class="mean__right-nav-ul-li-a">
+                        <a href="https://telegram.me/AlyZip" class="mean__right-nav-ul-li-a" title="" target="_blank" >
                             <img src="assets/images/telegram.svg" alt="">
                         </a>
                     </li>
 
+                    <!--whatsap-->
                     <li class="mean__right-nav-ul-li">
-                        <a href="#" title="whatsap" class="mean__right-nav-ul-li-a">
+                        <a href="https://wa.me/74955005056" class="mean__right-nav-ul-li-a" title="" target="_blank" >
                             <img src="assets/images/whatsap.svg" alt="">
                         </a>
                     </li>
 
                 </ul>
             </nav>
+
             <div class="mean__contakt">
                 <p class="mean__contakt-p">
                     <a href="tel:+74955005056" class="mean__contakt-a">
@@ -116,6 +122,7 @@
                     <a href="#" class="mean__contakt-p-a">Заказать звонок</a>
                 </p>
             </div>
+
             <div class="mean__nav-right">
                 <a href="#" class="mean__nav-right-a">
                     <img src="assets/images/Group.svg" alt="">
@@ -123,7 +130,9 @@
             </div>
 
         </div>
+
     </div>
+
 </header>
 
 <div class="vld-container">
@@ -171,16 +180,15 @@
         <div></div>
     </div>
 
-
-    <!--Месенджеры-->
+    <!--messenger-->
     <div class="messenger">
         <div>
-            <a href="#" class="messenger__link">
+            <a href="https://telegram.me/AlyZip" class="messenger__link" target="_blank">
                 <img src="assets/images/Whatsapmeseenger.svg" alt="" class="messenger__whatsapp-a-img">
             </a>
         </div>
         <div>
-            <a href="#" class="messenger__link">
+            <a href="https://wa.me/74955005056" class="messenger__link" target="_blank">
                 <img src="assets/images/Telegrammessenger.svg" alt="" class="messenger__telegram-a-img">
             </a>
         </div>
@@ -211,20 +219,9 @@
 
 </div>
 
+<!--script-->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script>
-    $(function () {
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 100) {
-                $(".mean").removeClass("head-fixed");
-            } else {
-                $(".mean").addClass('head-fixed');
-            }
-        });
-    });
-</script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>

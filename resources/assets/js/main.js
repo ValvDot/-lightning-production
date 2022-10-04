@@ -1,12 +1,11 @@
-import iconClickHandler from './icon';
-import svg4everybody from 'svg4everybody';
+$(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
 
-document.addEventListener("DOMContentLoaded", () => {
-    let icons = document.getElementsByClassName('social__link');
-
-    for (let i = 0; i < icons.length; i++) {
-        icons[i].addEventListener('click', iconClickHandler);
-    }
-
-    svg4everybody();
+        if (scroll >= 100) {
+            $(".mean").removeClass("head-fixed");
+        } else {
+            $(".mean").addClass('head-fixed');
+        }
+    });
 });
