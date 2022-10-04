@@ -230,7 +230,7 @@ nav.mean__right-nav {
 
 @media (max-width: 744px) {
   .mean__container {
-    width: 712px;
+    max-width: 712px;
     padding: 0 16px;
   }
 }
