@@ -249,9 +249,9 @@ nav.mean__right-nav {
 }
 
 .test {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
   gap: 40px;
-  display: grid;
   margin: 100px auto;
 }
 
@@ -396,7 +396,6 @@ a.bot-menu__a {
   }
   .mean__container {
     max-width: 920px;
-    padding: 0 16px;
     grid-template-columns: 249px 1fr;
   }
 }
@@ -426,6 +425,13 @@ a.bot-menu__a {
   }
   .vld-container {
     max-width: 682px;
+  }
+}
+
+@media (max-width: 744px){
+  .mean__container {
+    width: 712px;
+    padding: 0 16px;
   }
 }
 
