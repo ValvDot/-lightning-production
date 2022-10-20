@@ -1,5 +1,9 @@
 {
     "/public/assets/js/main.js": "/public/assets/js/main.js",
+    "/public/assets/js/glide.js": "/public/assets/js/glide.js",
+    "/public/assets/js/glide-init.js": "/public/assets/js/glide-init.js",
+    "/public/assets/css/glide.theme.css": "/public/assets/css/glide.theme.css",
+    "/public/assets/css/glide.core.css": "/public/assets/css/glide.core.css",
     "/public/assets/css/style.css": "/public/assets/css/style.css",
     "/public/index.html": "/public/index.html",
     "/public/assets/font/font/ProximaNova-Black.eot": "/public/assets/font/font/ProximaNova-Black.eot",
