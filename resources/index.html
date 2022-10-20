@@ -18,6 +18,12 @@
     <!--fonts-->
     <link rel="stylesheet" href="assets/font/stylesheet.css">
 
+    <!-- Slide Core Stylesheet -->
+    <link rel="stylesheet" href="assets/css/glide.core.css">
+
+    <!-- Slide Theme Stylesheet -->
+    <link rel="stylesheet" href="assets/css/glide.theme.css">
+
     <!--styles-->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -135,11 +141,22 @@
 
 </header>
 
+<!--Slider-->
+<section>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><div class="air-bg">Слайд 1</div></li>
+                <li class="glide__slide"><div class="air-bg">Слайд 2</div></li>
+                <li class="glide__slide"><div class="air-bg">Слайд 3</div></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
 <div class="vld-container">
-
-    <section class="air-bg">
-
-    </section>
 
     <div class="test">
         <div></div>
@@ -220,6 +237,9 @@
 </div>
 
 <!--script-->
+<script src="assets/js/glide.js"></script>
+<script src="assets/js/glide-init.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="assets/js/main.js"></script>
 

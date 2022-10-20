@@ -15,6 +15,15 @@ mix
         'resources/assets/js/main.js',
         'public/assets/js'
     )
+    .js(
+        'node_modules/@glidejs/glide/dist/glide.js',
+        'public/assets/js'
+    )
+    .js(
+        'resources/assets/js/glide-init.js',
+        'public/assets/js'
+    )
+
     // Используем полифиллы
     .polyfill({
         enabled: true,
@@ -24,10 +33,10 @@ mix
         corejs: '3.8',
     })
     // Преобразовываем SASS в CSS
-    .sass(
-        'resources/assets/scss/style.scss', // Путь относительно каталога с webpack.mix.js
-        'public/assets/css' // Путь относительно каталога с webpack.mix.js
-    )
+    .sass('resources/assets/scss/style.scss','public/assets/css')
+
+    .sass('node_modules/@glidejs/glide/src/assets/sass/glide.core.scss','public/assets/css')
+    .sass('node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss','public/assets/css')
 
     // Переопределяем параметры mix
     .options({
@@ -79,4 +88,6 @@ mix
 
     // переносим все файлы
     .copy('resources/*.html', 'public/')
-    .copy('resources/assets/font', 'public/assets/font');
+    .copy('resources/assets/font', 'public/assets/font')
+;
+
