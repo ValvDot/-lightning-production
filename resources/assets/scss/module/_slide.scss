@@ -1,7 +1,18 @@
 $main_color: rgba(255, 255, 255, 0.4);;
 .glide{
+  &__bullets-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    margin: 15px 0px 0px 0px;
+  }
   .vld-container {
     z-index: 10000;
+  }
+  .air-bg {
+    background-image: url("../images/slider/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
   }
   &__center{
     width: 1328px;

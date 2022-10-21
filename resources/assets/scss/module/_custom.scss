@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-.air-bg {
+.ссс-bg {
   height: 100vh;
   background-image: url(../images/bg-test.jpg);
   background-size: cover;
   position: relative;
-
+  min-height: 688px;
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
