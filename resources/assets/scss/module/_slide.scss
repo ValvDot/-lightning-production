@@ -1,7 +1,4 @@
 $main_color: rgba(255, 255, 255, 0.4);
-.slider_block {
-  padding: 6%;
-}
 
 .air-bg {
   background-image: url("../images/slider/bg.png");
@@ -10,6 +7,12 @@ $main_color: rgba(255, 255, 255, 0.4);
 }
 
 .glide {
+
+  &__vld-container {
+    padding: 6%;
+    z-index: 10000;
+  }
+
   &__bullets-block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,9 +20,6 @@ $main_color: rgba(255, 255, 255, 0.4);
     margin: 15px 0px 0px 0px;
   }
 
-  .vld-container {
-    z-index: 10000;
-  }
 
   &__center {
     width: 1328px;
@@ -50,6 +50,7 @@ $main_color: rgba(255, 255, 255, 0.4);
       }
     }
   }
+
   p {
     font-weight: 400;
     font-size: 14px;
@@ -168,51 +169,56 @@ $main_color: rgba(255, 255, 255, 0.4);
         transition: 0.3s;
       }
     }
-
-    &__block-2 {
-      z-index: 1000;
-    }
-
-    &__block {
-      display: flex;
-    }
-
-    &_block-navigation {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      flex-direction: column;
-      bottom: 0;
-    }
-
-    &__bullets-img {
-      width: 22px;
-      height: 36px;
-      margin: auto;
-    }
-
-    &__bullet--active {
-      background: #7BB058 !important;
-    }
-
-    &__marker {
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 22px;
-      height: 5px;
-      border: 0;
-      border-radius: 1px;
-    }
-
-
   }
+
+  &__block-2 {
+    z-index: 1000;
+  }
+
+  &__block {
+    position: relative;
+  }
+
+  &__img-abs {
+    position: absolute;
+    bottom: -116px;
+    right: 0;
+  }
+
+  &_block-navigation {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-direction: column;
+    bottom: 0;
+  }
+
+  &__bullets-img {
+    width: 22px;
+    height: 36px;
+    margin: auto;
+  }
+
+  &__bullet--active {
+    background: #7BB058 !important;
+  }
+
+  &__marker {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 22px;
+    height: 5px;
+    border: 0;
+    border-radius: 1px;
+  }
+
 }
 
 

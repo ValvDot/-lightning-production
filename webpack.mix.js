@@ -26,7 +26,7 @@ mix
 
     // Используем полифиллы
     .polyfill({
-        enabled: true,
+        enabled: false,
         useBuiltIns: "usage",
         targets: false, // Используем настройки browserslist из package.json
         debug: true,
@@ -89,5 +89,6 @@ mix
     // переносим все файлы
     .copy('resources/*.html', 'public/')
     .copy('resources/assets/font', 'public/assets/font')
+
 ;
 
