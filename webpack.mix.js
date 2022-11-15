@@ -67,6 +67,7 @@ mix
             }),
             // Оптимизируем качество изображений
             new ImageminPlugin({
+                disable: process.env.NODE_ENV !== 'production', // отключить в других режимах
                 test: /\.(jpe?g|png|gif)$/i,
                 plugins: [
                     imageminMozjpeg({

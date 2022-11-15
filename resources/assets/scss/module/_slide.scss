@@ -28,8 +28,9 @@ $main_color: rgba(255, 255, 255, 0.4);
 
 
   &__center {
-    width: 1328px;
-    margin: auto;
+    max-width: 1328px;
+    width: 100%;
+    padding: 0 36px;
     position: absolute;
     top: 50%;
     left: 50.4%;
@@ -40,22 +41,7 @@ $main_color: rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: space-between;
     height: 0px;
-    margin: -31.5px 0 0 0;
-    @media (max-width: 1366px) {
-      & {
-        max-width: 1202px;
-      }
-    }
-    @media (max-width: 1024px) {
-      & {
-        max-width: 922px;
-      }
-    }
-    @media (max-width: 834px) {
-      & {
-        max-width: 682px;
-      }
-    }
+
   }
 
   p {
@@ -67,8 +53,8 @@ $main_color: rgba(255, 255, 255, 0.4);
 
   &__vld-h2 {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: clamp(22px, 5vw, 32px);
+    line-height: clamp(24px, 5vw, 32px);
     color: #FFFFFF;
     margin-bottom: 19px;
 
@@ -82,7 +68,7 @@ $main_color: rgba(255, 255, 255, 0.4);
     .old {
       text-decoration: line-through;
       font-weight: 600;
-      font-size: 32px;
+      font-size: clamp(12px,5vw,32px);
       line-height: 40px;
       text-decoration-line: line-through;
       color: rgba(255, 255, 255, 0.4);
@@ -96,7 +82,7 @@ $main_color: rgba(255, 255, 255, 0.4);
       font-size: 16px;
 
       span {
-        font-size: 48px;
+        font-size: clamp(25px,10vw,48px);
       }
     }
   }
@@ -277,19 +263,23 @@ $main_color: rgba(255, 255, 255, 0.4);
   .glide__vld-description {
     margin-bottom: 33px;
   }
+
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
   .glide__vld-container {
     padding: 76px 0px 0px 48px;
   }
-  img.glide__img-abs {
+ .glide__img-abs {
     bottom: -116px;
+  }
+  .glide__left {
+    visibility: hidden;
   }
 }
 
-@media (max-width: 834px) {
-  .glide__img-abs {
+@media (max-width: 840px) {
+  img.glide__img-abs {
     display: none;
   }
   .glide__vld-container {
@@ -310,8 +300,6 @@ $main_color: rgba(255, 255, 255, 0.4);
   }
   .glide__center {
     top: 45%;
-    left: 125.4%;
-
   }
 }
 
@@ -335,6 +323,7 @@ $main_color: rgba(255, 255, 255, 0.4);
   .glide__center {
     display: none;
   }
+
 }
 
 @media (max-width: 390px) {
@@ -345,9 +334,7 @@ $main_color: rgba(255, 255, 255, 0.4);
     font-size: 10px;
     line-height: 10px;
   }
-  .glide__vld-h2 {
-    font-size: 28px;
-  }
+
 }
 
 @media (max-width: 375px) {
@@ -368,8 +355,7 @@ $main_color: rgba(255, 255, 255, 0.4);
   .glide__vld-list ul li {
     font-size: 13px;
   }
-  .glide__vld-h2 {
-    font-size: 22px;
-  }
+
+
 }
 
