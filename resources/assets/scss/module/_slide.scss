@@ -8,6 +8,11 @@ $main_color: rgba(255, 255, 255, 0.4);
 }
 
 .glide {
+
+  &__slide--active {
+    position: relative
+  }
+
   &__vld-subtitle {
     position: relative;
     bottom: 14px;
@@ -68,7 +73,7 @@ $main_color: rgba(255, 255, 255, 0.4);
     .old {
       text-decoration: line-through;
       font-weight: 600;
-      font-size: clamp(12px,5vw,32px);
+      font-size: clamp(12px, 5vw, 32px);
       line-height: 40px;
       text-decoration-line: line-through;
       color: rgba(255, 255, 255, 0.4);
@@ -82,7 +87,7 @@ $main_color: rgba(255, 255, 255, 0.4);
       font-size: 16px;
 
       span {
-        font-size: clamp(25px,10vw,48px);
+        font-size: clamp(25px, 10vw, 48px);
       }
     }
   }
@@ -270,7 +275,7 @@ $main_color: rgba(255, 255, 255, 0.4);
   .glide__vld-container {
     padding: 76px 0px 0px 48px;
   }
- .glide__img-abs {
+  .glide__img-abs {
     bottom: -116px;
   }
   .glide__left {
@@ -359,3 +364,26 @@ $main_color: rgba(255, 255, 255, 0.4);
 
 }
 
+.air-shadow {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-image: radial-gradient(
+                  circle,
+                  transparent 160px,
+                  rgba(0, 0, 0, 0.85) 600px
+  );
+  animation: air-shadow 2s ease;
+}
+
+
+@keyframes air-shadow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
